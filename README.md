@@ -3,7 +3,13 @@
 Live site:
 
 - [donation-campaign](https://blognest-five.vercel.app/)
-
+Features:
+<ul>
+    <li>Fetch Data from external server.</li>
+    <li>Search implementation by donation category wise</li>
+    <li>Local Storage Implementation for storing donations page lists of data</li>
+    <li>chart implementation on user donation and available donation</li>
+</ul>
 Uses:
 
 - [Typescript](https://www.typescriptlang.org/) : A superset of Javascript.
