@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "server": "json-server --watch data.json --port 8000",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,7 +15,10 @@
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.22.3",
+    "react-spinners": "^0.13.8",
+    "recharts": "^2.12.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

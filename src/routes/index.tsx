@@ -1,7 +1,9 @@
 import RootLayout from "@/layout/RootLayout";
+import { fetchDonationLists, fetchDontionDetails } from "@/lib/query";
 import Donation from "@/pages/Donation";
+import DonationDetails from "@/pages/DonationDetails";
 import Home from "@/pages/Home";
-import Statitics from "@/pages/Statitics";
+import Statistics from "@/pages/Statistics";
 import { createBrowserRouter } from "react-router-dom";
 
 const routes = createBrowserRouter([
@@ -12,14 +14,21 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+        loader: async () => await fetchDonationLists(),
       },
       {
         path: "/donation",
         element: <Donation />,
       },
       {
-        path: "/statitics",
-        element: <Statitics />,
+        path: "/donation-details/:id",
+        element: <DonationDetails />,
+        loader: ({ params }) => fetchDontionDetails(params.id as string),
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
+        loader: async () => await fetchDonationLists(),
       },
     ],
   },

@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/Logo.png";
 export default function Nav() {
   return (
-    <nav className="border-b">
+    <nav className="border-b sticky top-0 z-10 bg-white">
       <div className="max-w-[1320px] mx-auto px-3">
         <div className="flex lg:flex-row flex-col justify-between items-center py-3">
-          <div>
+          <Link to="/">
             <img className="w-32" src={logo} alt="" />
-          </div>
+          </Link>
           <div className="lg:mt-0 mt-3">
             <ul className="flex items-center space-x-6">
               <li>
@@ -41,9 +41,9 @@ export default function Nav() {
                       ? "text-red-500 border-b border-red-500 font-medium"
                       : "font-medium"
                   }
-                  to="/statitics"
+                  to="/statistics"
                 >
-                  Statitics
+                  Statistics
                 </NavLink>
               </li>
             </ul>
