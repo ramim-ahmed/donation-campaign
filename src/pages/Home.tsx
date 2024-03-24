@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import CategoryList from "@/components/CategoryList";
 import CategoryLists from "@/components/CategoryLists";
 import Hero from "@/components/Hero";
@@ -7,7 +8,7 @@ import { useLoaderData, useNavigation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
 export default function Home() {
-  const donationLists = useLoaderData();
+  const donationLists: any = useLoaderData();
   const navigation = useNavigation();
   const [categoryInput, setCategoryInput] = useState<string>("");
   const handleSearchByCategory = (category: string) => {

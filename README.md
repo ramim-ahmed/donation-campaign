@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Donation Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live site:
 
-Currently, two official plugins are available:
+- [donation-campaign](https://blognest-five.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Uses:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Typescript](https://www.typescriptlang.org/) : A superset of Javascript.
+- [React](https://react.dev/) : For building user interface.
+- [React Router Dom](https://reactrouter.com/en/main): that allows client side routing without page refresh.
+- [Tailwindcss Buttons](https://devdojo.com/tailwindcss/buttons) : Pre design amazing buttons with tailwind utility class uses without config.
+- [React-Hot-Toast](https://react-hot-toast.com/) : that allows any action in website and success, error result showing help to way as toast.
+- [React-Spinner](https://www.npmjs.com/package/react-spinners) : that allows to use beautifully design spinner like that showing when data loaded or fetch.
+- [Daisy UI](https://daisyui.com/) : A component based library use tailwindcss
+- [TailwindCSS](https://tailwindcss.com/) : A css utiliy classes most popular framework.
+- [Local Storage]: that allows to store data in browser. in that case i am use store to user donation page list of data.

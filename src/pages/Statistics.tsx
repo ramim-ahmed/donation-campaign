@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 export default function Statistics() {
-  const donationsCategoryLists = useLoaderData();
+  const donationsCategoryLists: any = useLoaderData();
   const [donations, setDonations] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Statistics() {
     { name: "Your Donation", value: donations.length },
     {
       name: "Available",
-      value: donationsCategoryLists.length - donations.length,
+      value: donationsCategoryLists?.length - donations.length,
     },
   ];
 
